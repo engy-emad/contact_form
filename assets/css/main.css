@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial;
+    background: rgba(255, 67, 61);
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+#overlay {
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    background: rgba(255, 0, 106, .4);
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    background: #fff;
+    margin: 1.7rem auto 0 auto;
+    padding: 4rem;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-bottom: 1px solid rgba(255, 0, 106);
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 106);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 3rem;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgba(255, 0, 106), rgba(255, 67, 61));
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+.error,
+#error,
+.error_message {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+    color: #28a745;
+}
